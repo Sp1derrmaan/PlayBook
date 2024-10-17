@@ -1,45 +1,102 @@
-/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
-*{
-    box-sizing: border-box;
-}
-body{
+body {
     margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #ff007f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
-header{
-    background-color: hsl(0, 39%, 83%);
+
+.container {
+    text-align: left;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    background-color: #0a0a23;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.circle.left {
+    top: -500px;
+    left: -500px;
+    justify-content: flex-start;
+}
+
+.circle.right {
+    bottom: -500px;
+    right: -500px;
+    flex-direction: column;
+}
+
+.circle .text {
+    color: white;
+    font-size: 18px;
     text-align: center;
-    padding: 25px;
+    position: relative;
+    z-index: 1;
 }
-.navbar{
-    background-color: hsl(0, 64%, 20%);
-    height: 50px;
+
+.circle .text i {
+    margin-left: 20px;
 }
-aside{
-    width: 20%;
-    float: left;
-    padding: 10px;
+
+.circle.left .text {
+    margin-top: 30px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
 }
-section{
-    width: 40%;
-    float: left;
-    padding: 10px;
+
+.circle.right .text {
+    font-size: 17px;
+    margin-top: -100px;
+    margin-right: 80px;
 }
-article{
-    width: 40%;
-    float: left;
-    padding: 10px;
+
+.circle.right .game-image {
+    width: 280px;
+    height: 176.5px;
+    margin-top: 30px;
+    margin-right: 90px;
+    border: 5px solid white;
 }
-footer{
-    display: block;
-    clear: both;
-    background-color: hsl(140, 68%, 38%);
-    text-align: center;
-    padding: 25px;
+
+.title {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
-@media screen and (max-width:600px){
-    aside, section, article{
-        width: 100%;
-    }
+
+.subtitle {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.game-of-the-day {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.view-now {
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 50px;
 }
