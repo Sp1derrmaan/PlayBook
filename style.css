@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
 }
 
@@ -20,8 +20,8 @@ body {
 }
 
 .circle {
-    width: 50vh; /* converted from 500px */
-    height: 50vh; /* converted from 500px */
+    width: 50dvh; /* converted from 500px */
+    height: 50dvh; /* converted from 500px */
     background-color: #0a0a23;
     border-radius: 50%;
     display: flex;
@@ -31,72 +31,72 @@ body {
 }
 
 .circle.left {
-    top: -50vh; /* converted from -500px */
-    left: -50vh; /* converted from -500px */
+    top: -50dvh; /* converted from -500px */
+    left: -50dvh; /* converted from -500px */
     justify-content: flex-start;
 }
 
 .circle.right {
-    bottom: -50vh; /* converted from -500px */
-    right: -50vh; /* converted from -500px */
+    bottom: -50dvh; /* converted from -500px */
+    right: -50dvh; /* converted from -500px */
     flex-direction: column;
 }
 
 .circle .text {
     color: white;
-    font-size: 2vh; /* adjusted for relative size */
+    font-size: 2dvh; /* adjusted for relative size */
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
 .circle .text i {
-    margin-left: 2vh; /* adjusted for relative size */
+    margin-left: 2dvh; /* adjusted for relative size */
 }
 
 .circle.left .text {
-    margin-top: 3vh; /* converted from 30px */
-    margin-left: 20vh; /* converted from 200px */
+    margin-top: 3dvh; /* converted from 30px */
+    margin-left: 20dvh; /* converted from 200px */
     display: flex;
     align-items: center;
 }
 
 .circle.right .text {
-    font-size: 1.7vh; /* adjusted from 17px */
-    margin-top: -10vh; /* converted from -100px */
-    margin-right: 8vh; /* converted from 80px */
+    font-size: 1.7dvh; /* adjusted from 17px */
+    margin-top: -10dvh; /* converted from -100px */
+    margin-right: 8dvh; /* converted from 80px */
 }
 
 .circle.right .game-image {
-    width: 28vh; /* converted from 280px */
-    height: 17.65vh; /* converted from 176.5px */
-    margin-top: 3vh; /* converted from 30px */
-    margin-right: 9vh; /* converted from 90px */
-    border: 0.5vh solid white; /* converted from 5px */
+    width: 28dvh; /* converted from 280px */
+    height: 17.65dvh; /* converted from 176.5px */
+    margin-top: 3dvh; /* converted from 30px */
+    margin-right: 9dvh; /* converted from 90px */
+    border: 0.5dvh solid white; /* converted from 5px */
 }
 
 .title {
-    font-size: 1.6vh; /* converted from 16px */
-    margin-bottom: 1vh; /* converted from 10px */
+    font-size: 1.6dvh; /* converted from 16px */
+    margin-bottom: 1dvh; /* converted from 10px */
 }
 
 .subtitle {
-    font-size: 5vh; /* converted from 50px */
-    margin-bottom: 2vh; /* converted from 20px */
+    font-size: 5dvh; /* converted from 50px */
+    margin-bottom: 2dvh; /* converted from 20px */
 }
 
 .game-of-the-day {
-    font-size: 1.4vh; /* converted from 14px */
-    margin-top: 1vh; /* converted from 10px */
+    font-size: 1.4dvh; /* converted from 14px */
+    margin-top: 1dvh; /* converted from 10px */
 }
 
 .view-now {
-    font-size: 1.2vh; /* converted from 12px */
-    margin-top: 2vh; /* converted from 20px */
+    font-size: 1.2dvh; /* converted from 12px */
+    margin-top: 2dvh; /* converted from 20px */
     display: inline-block;
     color: white;
     text-decoration: none;
-    border: 0.2vh solid white; /* converted from 2px */
-    padding: 0.5vh 1vh; /* converted from 5px 10px */
-    border-radius: 5vh; /* converted from 50px */
+    border: 0.2dvh solid white; /* converted from 2px */
+    padding: 0.5dvh 1dvh; /* converted from 5px 10px */
+    border-radius: 5dvh; /* converted from 50px */
 }
