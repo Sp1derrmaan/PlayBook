@@ -8,7 +8,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    height: 100vh; /* Fallback */
+    height: 100dvh; /* For modern browsers */
     overflow: hidden;
 }
 
@@ -20,8 +21,10 @@ body {
 }
 
 .circle {
-    width: 50dvh; /* converted from 500px */
-    height: 50dvh; /* converted from 500px */
+    width: 50vh; /* Fallback */
+    width: 50dvh; /* Modern browser */
+    height: 50vh; /* Fallback */
+    height: 50dvh; /* Modern browser */
     background-color: #0a0a23;
     border-radius: 50%;
     display: flex;
@@ -31,72 +34,117 @@ body {
 }
 
 .circle.left {
-    top: -50dvh; /* converted from -500px */
-    left: -50dvh; /* converted from -500px */
+    top: -50vh; /* Fallback */
+    top: -50dvh; /* Modern browser */
+    left: -50vh; /* Fallback */
+    left: -50dvh; /* Modern browser */
     justify-content: flex-start;
 }
 
 .circle.right {
-    bottom: -50dvh; /* converted from -500px */
-    right: -50dvh; /* converted from -500px */
+    bottom: -50vh; /* Fallback */
+    bottom: -50dvh; /* Modern browser */
+    right: -50vh; /* Fallback */
+    right: -50dvh; /* Modern browser */
     flex-direction: column;
 }
 
 .circle .text {
-    color: white;
-    font-size: 2dvh; /* adjusted for relative size */
+    font-size: 18px; /* Fallback */
+    font-size: 2dvh; /* Modern browser */
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
 .circle .text i {
-    margin-left: 2dvh; /* adjusted for relative size */
+    margin-left: 2dvh;
 }
 
 .circle.left .text {
-    margin-top: 3dvh; /* converted from 30px */
-    margin-left: 20dvh; /* converted from 200px */
+    margin-top: 3dvh;
+    margin-left: 20dvh;
     display: flex;
     align-items: center;
+    color: white    ;
 }
 
 .circle.right .text {
-    font-size: 1.7dvh; /* adjusted from 17px */
-    margin-top: -10dvh; /* converted from -100px */
-    margin-right: 8dvh; /* converted from 80px */
+    font-size: 1.7dvh;
+    margin-top: -10dvh;
+    margin-right: 8dvh;
 }
 
 .circle.right .game-image {
-    width: 28dvh; /* converted from 280px */
-    height: 17.65dvh; /* converted from 176.5px */
-    margin-top: 3dvh; /* converted from 30px */
-    margin-right: 9dvh; /* converted from 90px */
-    border: 0.5dvh solid white; /* converted from 5px */
+    width: 28dvh;
+    height: auto;
+    aspect-ratio: 280 / 176.5;
+    margin-top: 3dvh;
+    margin-right: 9dvh;
+    border: 0.5dvh solid white;
 }
 
 .title {
-    font-size: 1.6dvh; /* converted from 16px */
-    margin-bottom: 1dvh; /* converted from 10px */
+    font-size: 1.6dvh;
+    margin-bottom: 1dvh;
 }
 
 .subtitle {
-    font-size: 5dvh; /* converted from 50px */
-    margin-bottom: 2dvh; /* converted from 20px */
+    font-size: 5dvh;
+    margin-bottom: 2dvh;
 }
 
 .game-of-the-day {
-    font-size: 1.4dvh; /* converted from 14px */
-    margin-top: 1dvh; /* converted from 10px */
+    font-size: 1.4dvh;
+    margin-top: 1dvh;
 }
 
 .view-now {
-    font-size: 1.2dvh; /* converted from 12px */
-    margin-top: 2dvh; /* converted from 20px */
+    font-size: 1.2dvh;
+    margin-top: 2dvh;
     display: inline-block;
     color: white;
     text-decoration: none;
-    border: 0.2dvh solid white; /* converted from 2px */
-    padding: 0.5dvh 1dvh; /* converted from 5px 10px */
-    border-radius: 5dvh; /* converted from 50px */
+    border: 0.2dvh solid white;
+    padding: 0.5dvh 1dvh;
+    border-radius: 5dvh;
+}
+
+/* Responsive changes */
+@media (max-width: 768px) {
+    .circle {
+        width: 30dvh;
+        height: 30dvh;
+    }
+
+    .circle.left {
+        top: -30dvh;
+        left: -30dvh;
+    }
+
+    .circle.right {
+        bottom: -30dvh;
+        right: -30dvh;
+    }
+
+    .circle .text {
+        font-size: 1.5dvh;
+    }
+
+    .circle.right .game-image {
+        width: 20dvh;
+        height: auto;
+    }
+
+    .title {
+        font-size: 1.2dvh;
+    }
+
+    .subtitle {
+        font-size: 4dvh;
+    }
+
+    .view-now {
+        font-size: 1dvh;
+    }
 }
