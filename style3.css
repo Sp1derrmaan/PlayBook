@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f06, #ff9ec4);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.form-box {
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency for form box */
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent input boxes */
+    color: white;
+    
+}
+
+input::placeholder {
+    color: white; /* Placeholder text color */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.input-field input :focus+label,
+.input-field input :not(:placeholder-shown) + label{ 
+    top: -10px; /* Move label above input */
+    left: 10px; /* Keep the label aligned */
+    font-size: 12px; /* Smaller font size */
+    color: #ff9ec4; /* Change color on focus */}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #f06;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff9ec4;
+}
+
+p {
+    color: white;
+    margin-top: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ff9ec4;
+}
+
+

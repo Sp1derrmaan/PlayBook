@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Press Start 2P', cursive;
-    background-color: #ff007f;
+    background: linear-gradient(135deg, #f06, #ff9ec4);
     color: white;
     display: flex;
     justify-content: center;
