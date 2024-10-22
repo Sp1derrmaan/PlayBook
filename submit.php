@@ -40,7 +40,7 @@ $message = $_POST['message'];
 
 // Insert form data into the database 
 
-$sql = "INSERT INTO contacts (name, email, message) VALUES ('$name', '$email', '$message')"; 
+$sql = "INSERT INTO contact_form_db.contact_form_db (name, email, message) VALUES ('$name', '$email', '$message')"; 
 
  
 
